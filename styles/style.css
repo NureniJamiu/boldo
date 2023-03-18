@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem 6rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav div img {
+  width: 60%;
+  cursor: pointer;
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 0.8rem;
+}
+header nav div a {
+  color: #0a2640;
+}
+header nav div a:hover {
+  color: rgb(66, 66, 248);
+}/*# sourceMappingURL=style.css.map */
