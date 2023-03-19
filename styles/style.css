@@ -5,36 +5,38 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  font-weight: normal;
 }
 
-section {
-  background-image: url("../assets/background.png");
+.header-section {
+  background-image: url("assets/background.png");
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   padding: 1rem 6rem;
 }
-section nav {
+.header-section nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section nav div img {
+.header-section nav div img {
   width: 60%;
   cursor: pointer;
 }
-section nav div {
+.header-section nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
   font-size: 0.8rem;
 }
-section nav div a {
+.header-section nav div a {
   color: #0a2640;
 }
-section nav div a:hover {
-  color: rgb(66, 66, 248);
+.header-section nav div a:hover {
+  color: #3188da;
 }
 
 .main {
@@ -93,4 +95,213 @@ section nav div a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.services-section {
+  background-color: #0a2640;
+  color: white;
+  padding: 3rem 6rem;
+}
+.services-section .services-text {
+  text-align: center;
+  width: 55%;
+  margin: 0px auto;
+}
+.services-section h6 {
+  font-size: 0.9rem;
+}
+.services-section h4 {
+  font-size: 2rem;
+}
+.services-section .services-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.services-section .services-images div p {
+  margin: 1rem 0px;
+  color: azure;
+}
+.services-section .services-images div a {
+  padding: 0.5rem 0px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.services-section .services-images div a:hover {
+  color: #7575df;
+  border-bottom: 2px solid #7575df;
+}
+
+.features-section {
+  background-color: white;
+  padding: 3rem 6rem;
+}
+.features-section .features-section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.features-section .features-section-top .features-section-left {
+  width: 100%;
+}
+.features-section .features-section-top .features-section-left img {
+  width: 80%;
+}
+.features-section .features-section-top .features-section-right {
+  width: 100%;
+  line-height: normal;
+}
+.features-section .features-section-top .features-section-right div {
+  display: grid;
+  gap: 1rem;
+}
+.features-section .features-section-top .features-section-right div h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.features-section .features-section-top .features-section-right div ul {
+  list-style: none;
+}
+.features-section .features-section-top .features-section-right div ul li {
+  padding: 0.2rem 0px;
+}
+.features-section .features-section-top .features-section-right div p {
+  padding: 1rem 2rem;
+  background-color: #0a2640;
+  border-radius: 2rem;
+  width: 30%;
+  text-align: center;
+  color: azure;
+  margin-top: 1rem;
+}
+
+.features-section .features-section-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.features-section .features-section-bottom .features-section-left {
+  width: 100%;
+}
+.features-section .features-section-bottom .features-section-left img {
+  width: 80%;
+  float: right;
+}
+.features-section .features-section-bottom .features-section-right {
+  width: 100%;
+  line-height: normal;
+}
+.features-section .features-section-bottom .features-section-right div {
+  display: grid;
+  gap: 1rem;
+}
+.features-section .features-section-bottom .features-section-right div h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.features-section .features-section-bottom .features-section-right div ul {
+  list-style: none;
+}
+.features-section .features-section-bottom .features-section-right div ul li {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0px;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+}
+.features-section .features-section-bottom .features-section-right div ul li:first-child {
+  background-color: #0a2640;
+  color: white;
+}
+
+.testimonials-section {
+  background-color: #0a2640;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 6rem;
+}
+.testimonials-section .testimonial-top h4 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  width: 70%;
+}
+.testimonials-section .testimonial-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.testimonials-section .testimonial-bottom div {
+  flex: 1;
+  padding: 0.2rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.testimonials-section .testimonial-bottom div p {
+  margin-top: 1rem;
+}
+.testimonials-section .testimonial-bottom div div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 1rem 0;
+  align-items: center;
+}
+.testimonials-section .testimonial-bottom div div .testimonial-id-top {
+  flex: none;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #0a2640;
+  border-radius: 50%;
+  margin: 0;
+}
+.testimonials-section .testimonial-bottom div div .testimonial-id-bottom {
+  flex: none;
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+.testimonials-section .testimonial-bottom div div .testimonial-id-bottom span {
+  font-size: 0.8rem;
+}
+.testimonials-section .testimonial-bottom div div .testimonial-id-bottom span:first-child {
+  font-weight: bold;
+}
+
+.faq-section {
+  padding: 2rem 6rem;
+  background-color: white;
+}
+.faq-section div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.faq-section div div h6 {
+  flex: 1;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.faq-section div div div {
+  flex: 1;
+  display: block;
+  font-size: 1.3rem;
+}
+.faq-section div div div p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid #f0eeee;
 }/*# sourceMappingURL=style.css.map */
