@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@100;200;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,32 +7,90 @@
   font-family: "Poppins", sans-serif;
 }
 
-header {
+section {
   background-image: url("../assets/background.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
   padding: 1rem 6rem;
 }
-header nav {
+section nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav div img {
+section nav div img {
   width: 60%;
   cursor: pointer;
 }
-header nav div {
+section nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
   font-size: 0.8rem;
 }
-header nav div a {
+section nav div a {
   color: #0a2640;
 }
-header nav div a:hover {
+section nav div a:hover {
   color: rgb(66, 66, 248);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.main .left h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.main .left div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.main .left div .pri-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #0a2640;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.main .left div .sec-btn {
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  border: 2px solid #0a2640;
+  cursor: pointer;
+}
+.main .left .marquee {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .left .marquee img {
+  width: 8rem;
+}
+.main .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .right .top {
+  width: 100%;
+}
+.main .right .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
